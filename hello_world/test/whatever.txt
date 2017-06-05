@@ -1,0 +1,4 @@
+Whatever, I learnt how to use cat to create a text file from the terminal.
+Since I am done writing I will type Ctrl + D. 
+[Dclear
+clear
