@@ -107,22 +107,25 @@
     <p>Lets get in touch and talk about your and our next project.</p>
 
 
-		<form action="php/contact.php" target="_blank">
 
-			<input class="w3-input" type="text" placeholder="Name" required name="Name">
-		
-      <input class="w3-input w3-section" type="text" placeholder="Email" required name="Email">
-
-      <input class="w3-input w3-section" type="text" placeholder="Subject" required name="Subject">
-
-      <input class="w3-input w3-section" type="text" placeholder="Comment" required name="Comment">
-
+		<!-- <form action="php/contact.php" method="POST" target="_blank">
+			<input class="w3-input" type="text" placeholder="Name" required name="name">
+      <input class="w3-input w3-section" type="text" placeholder="Email" required name="email">
+      <input class="w3-input w3-section" type="text" placeholder="Subject" required name="subject">
+      <input class="w3-input w3-section" type="text" placeholder="Comment" required name="comment">
       <button class="w3-button w3-black w3-section" type="submit">
         <i class="fa fa-paper-plane"> </i> SEND MESSAGE
       </button>
 
+    </form> -->
 
-    </form>
+		<form action="mail.php" method="POST">
+<p>Name</p> <input class="w3-input" type="text" name="name">
+<p>Email</p> <input class="w3-input" type="text" name="email">
+<p>Message</p><textarea class="w3-input" name="message" rows="6" cols="25"></textarea><br />
+<input class="w3-input" type="submit" value="Send">
+<input class="w3-input" type="reset" value="Clear">
+</form>
   </div>
 
 <!-- End page content -->
@@ -133,7 +136,7 @@
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-16">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Bye!</a></p>
+  <p>Powered by <a href="http://az616578.vo.msecnd.net/files/2016/07/24/6360493048587078022008349599_love-01.jpg" title="Love, is all you need!" target="_blank" class="w3-hover-text-green">LOVE</a></p>
 </footer>
 
 <!-- Add Google Maps -->
