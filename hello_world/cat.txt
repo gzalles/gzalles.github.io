@@ -1,1 +1,0 @@
-cat can be used to create a text file from the terminal
