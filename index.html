@@ -6,9 +6,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="shortcut icon" type="image/x-icon" href="images/myfavicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/myfavicon.ico"/>
 </head>
-
+<!-- end of head-->
 <body>
 
   <!-- Navbar (sit on top) -->
@@ -17,13 +17,17 @@
       <a href="index.html" class="w3-bar-item w3-button"><b>Zalles</b> Gabriel</a>
       <!-- Float links to the right. Hide them on small screens -->
       <div class="w3-right w3-hide-small">
-        <a href="html/projects" class="w3-bar-item w3-button">Projects</a>
-        <a href="html/about" class="w3-bar-item w3-button">About</a>
-        <a href="html/contact" class="w3-bar-item w3-button">Contact</a>
+        <a href="html/compositions.html" class="w3-bar-item w3-button">Compositions</a>
+        <a href="html/songs.html" class="w3-bar-item w3-button">Songs</a>
+        <a href="html/recordings.html" class="w3-bar-item w3-button">Recordings</a>
+        <a href="html/photography.html" class="w3-bar-item w3-button">Photography</a>
+        <a href="html/videos.html" class="w3-bar-item w3-button">Videos</a>
+        <a href="html/books.html" class="w3-bar-item w3-button">Books</a>
+        <a href="html/services.html" class="w3-bar-item w3-button">Services</a>
+        <a href="html/others.html" class="w3-bar-item w3-button">Others</a>
       </div>
     </div>
   </div>
-
   <!-- Header -->
   <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
     <img class="w3-image" src="images/pedro-lopes-264652.jpg" alt="Timelapse" width="3000" height="600">
@@ -34,6 +38,7 @@
       <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Music</b></span> <span class="w3-hide-small w3-text-light-grey">LIFE</span></h1>
     </div>
   </header>
+  <!--TO DO: HEADER, image changes dynamically-->
 
   <!-- Page content -->
   <div class="w3-content w3-padding" style="max-width:1564px">
@@ -43,25 +48,36 @@
       <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
     </div>
 
+<!--TODO: use images directly from unsplash rather than hosting them-->
     <div class="w3-row-padding">
+      <!--COMPOSITIONS-->
       <div class="w3-col l3 m6 w3-margin-bottom">
         <div class="w3-display-container">
           <div class="w3-display-topleft w3-black w3-padding">Compositions</div>
-          <img src="images/marian-luzi-27892.jpg" alt="House" height="250" width="350">
+          <!--link to local html-->
+          <a href="html/compositions.html">
+          <img src="images/marian-luzi-27892.jpg" alt="Compositions" height="250" width="350">
+        </a>
         </div>
       </div>
+      <!--COMPOSITIONS-->
+      <!--SONGS-->
       <div class="w3-col l3 m6 w3-margin-bottom">
         <div class="w3-display-container">
           <div class="w3-display-topleft w3-black w3-padding">Songs</div>
           <img src="images/william-iven-17307.jpg" alt="House" height="250" width="350">
         </div>
       </div>
+      <!--SONGS-->
+      <!--RECORDINGS-->
       <div class="w3-col l3 m6 w3-margin-bottom">
         <div class="w3-display-container">
           <div class="w3-display-topleft w3-black w3-padding">Recordings</div>
           <img src="images/luke-chesser-50.jpg" alt="House" height="250" width="350">
         </div>
       </div>
+      <!--RECORDINGS-->
+      <!--PHOTOS-->
       <div class="w3-col l3 m6 w3-margin-bottom">
         <div class="w3-display-container">
           <div class="w3-display-topleft w3-black w3-padding">Photography</div>
@@ -69,7 +85,8 @@
         </div>
       </div>
     </div>
-
+    <!--PHOTOS-->
+    <!--VIDEOS-->
     <div class="w3-row-padding">
       <div class="w3-col l3 m6 w3-margin-bottom">
         <div class="w3-display-container">
@@ -77,24 +94,31 @@
           <img src="images/chris-lawton-172561.jpg" alt="House" height="250" width="350">
         </div>
       </div>
+      <!--VIDEOS-->
+      <!--BOOKS-->
       <div class="w3-col l3 m6 w3-margin-bottom">
         <div class="w3-display-container">
           <div class="w3-display-topleft w3-black w3-padding">Books</div>
           <img src="images/jazmin-quaynor-106654.jpg" alt="House" height="250" width="350">
         </div>
       </div>
+      <!--BOOKS-->
+      <!--SERVICES-->
       <div class="w3-col l3 m6 w3-margin-bottom">
         <div class="w3-display-container">
           <div class="w3-display-topleft w3-black w3-padding">Services</div>
           <img src="images/neonbrand-258972.jpg" alt="House" height="250" width="350">
         </div>
       </div>
+      <!--SERVICES-->
+      <!--OTHERS-->
       <div class="w3-col l3 m6 w3-margin-bottom">
         <div class="w3-display-container">
           <div class="w3-display-topleft w3-black w3-padding">Others</div>
           <img src="images/ellipsis.png" alt="House" height="250" width="350">
         </div>
       </div>
+      <!--OTHERS-->
     </div>
 
     <!-- About Section -->
@@ -111,7 +135,6 @@
       <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
       <p> Email: <a href="mailto:gzallesb@gmail.com"> gzalles@gmail.com </a> </p>
         <!-- <a href="https://www.w3schools.com">Visit W3Schools.com!</a> -->
-
       <p> Phone: 202-441-3074 </p>
 
     </div>
