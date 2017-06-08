@@ -1,75 +1,105 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Montserrat", sans-serif;font-weight:bold}
+img {margin-bottom:-7px;}
+.w3-row-padding img {margin-bottom:12px}
+</style>
+<body>
 
-<head>
-	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-	<link href='styles/style.css' rel='stylesheet' type='text/css'>
-	<meta charset='utf-8'>
-	<title>Web Audio Class NYU</title>
+<!-- Sidenav -->
+<nav class="w3-sidenav w3-black w3-card-2 w3-animate-top w3-center w3-xxlarge" style="display:none;padding-top:220px">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-jumbo w3-right w3-display-topright w3-padding-ver-24">
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="javascript:void(0)" class="w3-text-grey w3-hover-black">About</a>
+  <a href="javascript:void(0)" class="w3-text-grey w3-hover-black">Photos</a>
+  <a href="javascript:void(0)" class="w3-text-grey w3-hover-black">Shop</a>
+  <a href="javascript:void(0)" class="w3-text-grey w3-hover-black">Contact</a>
+</nav>
 
-	<head>
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
 
-		<body>
-			<img src="images/sound-2.jpg" alt="Digitized sound">
-			<!--test sound-->
-			<button type="button" onclick="osc()">Test sound</button>
-			<!--web site title-->
-			<h1>Immersive Web Audio Project</h1>
-			<!--each header links to subsection of project-->
-			<h2><a href="/html/binaural.html">Phase I: Implement Binaural</a></h2>
-			<ul>
-				<li> Explore the Web Audio API and write code which allows user to get stereo sound from soundcard to web page. </li>
-				<li> Test using the 3Dio from NYU or any of the other binaural microphones. </li>
-				<li> Incorporate a volume control for the audio (and maybe a panner). </li>
-				<li> Listen to the results on headphones to evaluate for quality plus let user know headphones are necessary.</li>
-			</ul>
-			<h2><a href="/html/ambisonic.html">Phase II: Incorporate Ambisonics Bed</a></h2>
-			<ul>
-				<li> Use a 4 channel soundcard and a tetra mic to get first order ambisonic audio into the site.</li>
-				<li> The 4 channels should be decoded in the backend to B-format (W, X, Y, Z).</li>
-				<li> The B-format is then decoded with omnitone into 8 speakers.</li>
-				<li> The user should be able to rotate and control the overall volume of the sound-field.</li>
-			</ul>
-			<h2>Phase III: OBA</h2>
-			<ul>
-				<li> Allow spot mics to work as audio objects.</li>
-				<li> Create function that let's user pick channels from soundcard as audio objects.</li>
-				<li> The user defines where the signal will be in 3D space (coordinate positioning UI).</li>
-				<li> Every object will come with an associated volume control.</li>
-			</ul>
-			<h2> Phase IV: Future Development </h2>
-			<ul>
-				<li> Make it stream live</li>
-				<li> Mixing on user side during livestream</li>
-				<li> 360 live video streaming</li>
-			</ul>
+<div class="w3-container w3-padding-hor-32 w3-center w3-opacity w3-margin-bottom">
+  <span class="w3-opennav w3-xxlarge w3-right w3-margin-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+  <div class="w3-clear"></div>
+  <h1>PHOTOLIO</h1>
+  <p>A template made by w3.css for photographers.</p>
+  <p class="w3-padding-hor-16"><button class="w3-btn" onclick="myFunction()">Toggle Grid Padding</button></p>
+</div>
 
-			<h2> More info </h2>
+<!-- Photo Grid -->
+<div id="myGrid">
+  <div class="w3-third">
+    <img src="images/1.png" style="width:100%">
+    <img src="images/1.png" style="width:100%">
+    <img src="images/1.png" style="width:100%">
+    <img src="images/1.png" style="width:100%">
+    <img src="images/1.png" style="width:100%">
+    <img src="images/1.png" style="width:100%">
+  </div>
 
-			<p> By the end of the semester I intend to have phase I done. This is close to what the immersive audio group has already accomplished which is binaural streaming with 360 video. I will use the binaural ears myself and a GoPro to try to stream a concert
-				(perhaps the SWiTch concert [society for women in technology]). If the streaming is not accomplished on time I will just record them with the tetra mic and attempt to use this audio on the website. The stream will not be live but at least I will get
-				a sense of what it is like to work with Omnitone. I am looking at different ways of doing the live stream I am currently leaning towards NodeJS due to it's flexibility. </p>
+  <div class="w3-third">
+    <img src="img_coffee.jpg" style="width:100%">
+    <img src="img_bridge.jpg" style="width:100%">
+    <img src="img_notebook.png" style="width:100%">
+    <img src="img_london.png" style="width:100%">
+    <img src="img_rocks.jpg" style="width:100%">
+    <img src="img_avatar_g.jpg" style="width:100%">
+  </div>
 
-			<h2> Requirements and considerations: </h2>
-			<ul>
-				<li> Streaming Protocol: HTTP </li>
-				<li> Adaptive Streaming?</li>
-				<li> CODEC? ogg vorbis, mp3, other... </li>
-				<li> Supported Browsers? Chrome, Firefox, Safari... </li>
-			</ul>
+  <div class="w3-third">
+    <img src="img_mist.jpg" style="width:100%">
+    <img src="img_workbench.jpg" style="width:100%">
+    <img src="img_gondol.jpg" style="width:100%">
+    <img src="img_skies.jpg" style="width:100%">
+    <img src="img_lights.jpg" style="width:100%">
+    <img src="img_workshop.jpg" style="width:100%">
+  </div>
+  </div>
+</div>
+<!-- Clear floats -->
+<div class="w3-clear"></div><br><br>
 
-			<h2>Some Useful Links</h2>
-			<ul>
-				<!--unordered list-->
-				<li><a href="https://github.com/GoogleChrome/omnitone/">Omnitone</a></li>
-				<li><a href="https://github.com/gzalles/gzalles.github.io"> Github</a> </li>
-				<li><a href="https://nodejs.org/en/"> NodeJS</a></li>
-				<li><a href="https://www.npmjs.com/"> NPM</a></li>
-			</ul>
+<!-- Footer -->
+<footer class="w3-container w3-padding-hor-64 w3-light-grey w3-center w3-margin-top w3-opacity">
+ <div class="w3-xlarge w3-padding-hor-32">
+   <a href="tryit.asp-filename=tryw3css_templates_photo&stacked=h.html#" class="w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official"></i></a>
+   <a href="tryit.asp-filename=tryw3css_templates_photo&stacked=h.html#" class="w3-hover-text-red w3-show-inline-block"><i class="fa fa-pinterest-p"></i></a>
+   <a href="tryit.asp-filename=tryw3css_templates_photo&stacked=h.html#" class="w3-hover-text-light-blue w3-show-inline-block"><i class="fa fa-twitter"></i></a>
+   <a href="tryit.asp-filename=tryw3css_templates_photo&stacked=h.html#" class="w3-hover-text-grey w3-show-inline-block"><i class="fa fa-flickr"></i></a>
+   <a href="tryit.asp-filename=tryw3css_templates_photo&stacked=h.html#" class="w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-linkedin"></i></a>
+ </div>
+  <p style="font-weight:normal">Powered by <a href="default.asp.html" target="_blank">w3.css</a></p>
+</footer>
 
-			<script src='scripts/osc.js'>
-			</script>
-			<script src='scripts/main.js'></script>
-		</body>
+<script>
+// Toggle grid padding
+function myFunction() {
+    var x = document.getElementById("myGrid");
+    if (x.className.indexOf("w3-row-padding") == -1) {
+        x.className += " w3-row-padding";
+    } else {
+        x.className = x.className.replace(" w3-row-padding", "");
+    }
+}
 
+// Open and close sidenav
+function w3_open() {
+    document.getElementsByClassName("w3-sidenav")[0].style.width = "100%";
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+}
+
+function w3_close() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+}
+</script>
+
+</body>
 </html>
