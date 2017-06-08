@@ -109,26 +109,14 @@
     <!-- Contact Section -->
     <div class="w3-container w3-padding-32" id="contact">
       <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-      <p>Lets get in touch and talk about your and our next project.</p>
 
-      <!-- <form action="php/contact.php" method="POST" target="_blank">
-			<input class="w3-input" type="text" placeholder="Name" required name="name">
-      <input class="w3-input w3-section" type="text" placeholder="Email" required name="email">
-      <input class="w3-input w3-section" type="text" placeholder="Subject" required name="subject">
-      <input class="w3-input w3-section" type="text" placeholder="Comment" required name="comment">
-      <button class="w3-button w3-black w3-section" type="submit">
-        <i class="fa fa-paper-plane"> </i> SEND MESSAGE
-      </button>
+      <form action="mail.php" method="POST">
+        <p>Name</p> <input type="text" name="name">
+        <p>Email</p> <input type="text" name="email">
+        <p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
+        <input type="submit" value="Send"><input type="reset" value="Clear">
+</form>
 
-    </form> -->
-
-      <form action="php/contact.php" method="POST">
-        <p>Name</p> <input class="w3-input" type="text" name="name">
-        <p>Email</p> <input class="w3-input" type="text" name="email">
-        <p>Message</p><textarea class="w3-input" name="message" rows="6" cols="25"></textarea><br />
-        <input class="w3-input" type="submit" value="Send">
-        <input class="w3-input" type="reset" value="Clear">
-      </form>
     </div>
 
     <!-- End page content -->
