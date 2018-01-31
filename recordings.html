@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>GabrielZalles</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/myfavicon.ico"/>
+</head>
+
+<body>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
+      <a href="index.html" class="w3-bar-item w3-button"><b>Zalles</b> Gabriel</a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="compositions.html" class="w3-bar-item w3-button">Compositions</a>
+        <a href="songs.html" class="w3-bar-item w3-button">Songs</a>
+        <a href="recordings.html" class="w3-bar-item w3-button">Recordings</a>
+        <a href="photography.html" class="w3-bar-item w3-button">Photography</a>
+        <a href="videos.html" class="w3-bar-item w3-button">Videos</a>
+        <a href="articles.html" class="w3-bar-item w3-button">Articles</a>
+        <a href="tech.html" class="w3-bar-item w3-button">Tech</a>
+        <a href="research.html" class="w3-bar-item w3-button">Research</a>
+      </div>
+      <!-- Float links to the right. Hide them on small screens -->
+    </div>
+  </div>
+
+  <!-- Page content -->
+  <div class="w3-content w3-padding" style="max-width:1564px">
+
+    <!-- About Section -->
+    <div class="w3-container w3-padding-32" id="about">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About </h3>
+      <p>The stuff on this page is a collection of recordings that I was a part of in either a small or substantial way. They are not impressive recordings by any means but they serve as a reminder of the places I've been and the people I met in the process. I hope to keep adding to this collection.
+    </p>
+  </div>
+
+  <!-- feed goes here -->
+  <p align="center">
+    <iframe width="100%" height="265" src="https://clyp.it/5ujycfe5/widget" frameborder="0"></iframe> <!--deceiver-->
+    <iframe width="100%" height="265" src="https://clyp.it/4cfng2o5/widget" frameborder="0"></iframe> <!--maybe they can hear us-->
+    <iframe width="100%" height="265" src="https://clyp.it/wknqjfhs/widget" frameborder="0"></iframe> <!--high tide -->
+    <iframe width="100%" height="265" src="https://clyp.it/eh0jzmi3/widget" frameborder="0"></iframe> <!--as a boy -->
+    <iframe width="100%" height="265" src="https://clyp.it/ns4gjq1u/widget" frameborder="0"></iframe> <!--untitled (alec hamilton - don't know whats wrong) -->
+    <iframe width="100%" height="265" src="https://clyp.it/x1pf2afr/widget" frameborder="0"></iframe><!--experimental cello -->
+    <iframe width="100%" height="265" src="https://clyp.it/jenqiqeu/widget" frameborder="0"></iframe><!--misplace -->
+    <iframe width="100%" height="265" src="https://clyp.it/4wmtyapk/widget" frameborder="0"></iframe><!--magic man medley -->
+    <iframe width="100%" height="265" src="https://clyp.it/hxxfpasn/widget" frameborder="0"></iframe><!--all these things ive done -->
+    <iframe width="100%" height="265" src="https://clyp.it/25suanzc/widget" frameborder="0"></iframe> <!--hes alright-->
+
+  </p>
+
+  <!-- Start Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p> Email: <a href="mailto:gzallesb@gmail.com"> gzallesb@gmail.com </a></p>
+    <p> Phone: 202-441-3074 </p>
+  </div>
+  <!-- End Contact Section -->
+
+  <!-- End page content -->
+</div>
+
+<!-- Google Map -->
+<div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <!--Add facebook icon with link-->
+  <a href="https://www.facebook.com/gabriel.zalles">
+    <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="facebook" height="32" width="32"></a>
+    <!--instagram-->
+    <a href="https://www.instagram.com/gabrielzalles/">
+      <img src="https://instagram-brand.com/wp-content/uploads/2016/11/app-icon2.png" alt="instagram icon" height="32" width="32"></a>
+      <!--twitter-->
+      <a href="https://twitter.com/gabrielzalles">
+        <img src="https://pbs.twimg.com/profile_images/875087697177567232/Qfy0kRIP_400x400.jpg" alt="twitter icon" height="32" width="32"></a>
+        <!--linked in-->
+        <a href="https://www.linkedin.com/in/gabrielzalles/">
+          <img src="https://lh3.googleusercontent.com/00APBMVQh3yraN704gKCeM63KzeQ-zHUi5wK6E9TjRQ26McyqYBt-zy__4i8GXDAfeys=w300" alt="linkedin icon" height="32" width="32"></a>
+
+        </footer>
+        <!-- Add Google Maps -->
+        <script>
+        function myMap()
+        {
+          myCenter=new google.maps.LatLng( 40.712775, -74.005973);
+          var mapOptions= {
+            center:myCenter,
+            zoom:12, scrollwheel: false, draggable: false,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+          };
+          var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+          var marker = new google.maps.Marker({
+            position: myCenter,
+          });
+          marker.setMap(map);
+        }
+        </script>
+        <!--GMaps scripts with key-->
+        <script src="https://maps.googleapis.com/maps/api/js?AIzaSyDeoYdEQgfizFdn-fIYL8EVI3hgvJWVPh4&callback=myMap"></script>
+      </body>
+      </html>
