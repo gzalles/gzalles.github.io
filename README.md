@@ -1,5 +1,5 @@
 # [gzalles.github.io](https://gzalles.github.io/)
 
-Learning about web-dev is fun but also frustrating.
+my personal portfolio and resume
 
-Jan. 30 - update links on index.html to point to other pages, cry a little bit.
+⌘
